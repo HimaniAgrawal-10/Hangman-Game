@@ -1,0 +1,71 @@
+const words = ["computer", "puzzle", "college", "science", "hangman", "programming", "technology", "quiz"];
+let selectedWord, guessedWord, wrongGuesses;
+
+const wordDisplay = document.getElementById("word-display");
+const message = document.getElementById("message");
+const wrong = document.getElementById("wrong");
+const keyboard = document.getElementById("keyboard");
+const restartBtn = document.getElementById("restart");
+
+// Generate keyboard A-Z
+function createKeyboard() {
+  keyboard.innerHTML = "";
+  for (let i = 65; i <= 90; i++) {
+    let btn = document.createElement("button");
+    btn.textContent = String.fromCharCode(i);
+    btn.addEventListener("click", () => guessLetter(btn));
+    keyboard.appendChild(btn);
+  }
+}
+
+// Start or restart game
+function startGame() {
+  selectedWord = words[Math.floor(Math.random() * words.length)].toUpperCase();
+  guessedWord = Array(selectedWord.length).fill("_");
+  wrongGuesses = [];
+  updateDisplay();
+  createKeyboard();
+  message.textContent = "";
+}
+
+// Update screen
+function updateDisplay() {
+  wordDisplay.textContent = guessedWord.join(" ");
+  wrong.textContent = wrongGuesses.join(" ");
+}
+
+// Handle guess
+function guessLetter(btn) {
+  const letter = btn.textContent;
+  btn.disabled = true;
+
+  if (selectedWord.includes(letter)) {
+    for (let i = 0; i < selectedWord.length; i++) {
+      if (selectedWord[i] === letter) guessedWord[i] = letter;
+    }
+  } else {
+    wrongGuesses.push(letter);
+  }
+
+  updateDisplay();
+  checkGameOver();
+}
+
+// Check win/lose
+function checkGameOver() {
+  if (!guessedWord.includes("_")) {
+    message.textContent = "🎉 You Won!";
+    disableAllButtons();
+  } else if (wrongGuesses.length >= 6) {
+    message.textContent = `💀 You Lost! Word was: ${selectedWord}`;
+    disableAllButtons();
+  }
+}
+
+function disableAllButtons() {
+  document.querySelectorAll("#keyboard button").forEach(btn => btn.disabled = true);
+}
+
+restartBtn.addEventListener("click", startGame);
+
+startGame();

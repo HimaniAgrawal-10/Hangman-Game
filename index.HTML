@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hangman Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+  <h1>🎯 Hangman Pro</h1>
+
+  <button id="themeToggle">🌙 Toggle Theme</button>
+
+  <canvas id="hangmanCanvas" width="200" height="250"></canvas>
+
+  <p>📂 Category: <span id="category"></span></p>
+  <p>❤️ Lives: <span id="lives"></span></p>
+  <p>🏆 Score: <span id="score">0</span></p>
+
+  <p id="word-display"></p>
+  <p id="message"></p>
+
+  <div id="keyboard"></div>
+
+  <p>❌ Wrong guesses: <span id="wrong"></span></p>
+
+  <button id="restart">Restart</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
