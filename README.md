@@ -24,7 +24,8 @@ https://himaniagrawal-10.github.io/Hangman-Game/
 
 ## 📸 Screenshot
 
-(Add screenshot here)
+<img width="564" height="743" alt="Screenshot 2026-04-18 115643" src="https://github.com/user-attachments/assets/1d219c7b-c4fb-4e10-bed3-32776d405cfc" />
+
 
 ## 💡 How to Run
 
