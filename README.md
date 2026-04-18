@@ -1,0 +1,42 @@
+# 🎯 Hangman Game
+
+An interactive and fun Hangman game built using **HTML, CSS, and JavaScript**.
+
+## 🚀 Features
+
+* 🎨 Animated hangman drawing (Canvas)
+* ⌨️ A-Z interactive keyboard + typing support
+* ❤️ Lives counter
+* 🏆 Score system
+* 📂 Category-based words
+* 🌗 Dark mode toggle
+* 🔄 Restart game
+
+## 🛠️ Tech Stack
+
+* HTML
+* CSS
+* JavaScript (Vanilla JS)
+
+## ▶️ Live Demo
+
+(Add your GitHub Pages link here later)
+
+## 📸 Screenshot
+
+(Add screenshot here)
+
+## 💡 How to Run
+
+1. Clone the repo
+2. Open `index.html` in browser
+
+## 🔮 Future Improvements
+
+* 🔊 Sound effects
+* 📱 Mobile responsive design
+* 🏆 Leaderboard
+
+---
+
+⭐ If you like this project, give it a star!
