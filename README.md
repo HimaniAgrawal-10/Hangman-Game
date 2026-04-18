@@ -20,7 +20,7 @@ An interactive and fun Hangman game built using **HTML, CSS, and JavaScript**.
 
 ## ▶️ Live Demo
 
-(Add your GitHub Pages link here later)
+https://himaniagrawal-10.github.io/Hangman-Game/
 
 ## 📸 Screenshot
 
