@@ -38,6 +38,6 @@ https://himaniagrawal-10.github.io/Hangman-Game/
 * 📱 Mobile responsive design
 * 🏆 Leaderboard
 
---
+
 
 ⭐ If you like this project, give it a star!
